@@ -1,0 +1,304 @@
+/* Define estilos para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Define estilos para o container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Define estilos para o cabeçalho */
+header.navbar {
+    background-color: #7c7878;
+    color: #ffffff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* Define estilos para o conteúdo dentro do cabeçalho */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define estilos para o título no cabeçalho */
+header h1 {
+    margin: 0;
+}
+
+/* Define estilo para o ícone do usúario*/
+.user-profile {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #383434;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.user-profile:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Define estilos para a barra de navegação */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Define estilos para a lista não ordenada na barra de navegação */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0; /* Define o tamanho da fonte como 0 para remover espaçamento entre elementos inline-block */
+}
+
+/* Define estilos para os itens da lista na barra de navegação */
+nav ul li {
+    display: inline-block;
+    margin-right: 10;
+    margin-left: 10;
+    font-size: 15px;
+}
+
+/* Define estilos para os links na barra de navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Define estilos para o fleshboard "Período" */
+.period-fleshboard {
+    grid-column: span 3;
+    text-align: center;
+}
+
+/* Define estilos para o container do fleshboard */
+.dashboard {
+    background-color: #ececec;
+    padding: 40px;
+}
+
+/* Define estilos para o fleshboard "Período" */
+.period-fleshboard {
+    grid-column: span ; /* Ocupa três colunas */
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento entre o fleshboard "Período" e as features */
+}
+
+/* Define estilos para o título dentro do fleshboard "Período" */
+.period-fleshboard h3 {
+    margin-top: 0;
+    color: #030000;
+}
+
+/* Define estilos para o grupo de entrada */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Define estilos para a entrada de texto */
+.input-group input {
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+/* Define estilos para o span no grupo de entrada */
+.input-group span {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    line-height: 36px;
+}
+
+/* Define estilos para o botão dentro do grupo de entrada / Botão "Pesquisar"*/
+
+.search-button img {
+    /*tamanho da imagem do ícone "Pesquisar"*/
+    width: 20px;  
+    height: 20px; 
+}
+
+.input-group button {
+    padding: 10px;
+    border: none;
+    background-color: #68686b;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Define estilos para a grade de recursos */
+.feature-grid {
+    display: grid; /* Exibe os elementos como uma grade */
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Define estilos para cada recurso */
+.feature {
+    background-color: #2b374b;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Define estilos para a imagem dentro de cada recurso*/
+.feature-image {
+    width: 100px;
+    height: 100px;
+    filter: invert(10%) sepia(100%) saturate(100%) hue-rotate(240deg) brightness(100%) contrast(101%);
+    opacity: 0.5;
+}
+
+
+/* Define estilos para o título dentro de cada recurso */
+.feature h3 {
+    margin-top: 3;
+}
+
+/* Define estilos para o parágrafo dentro de cada recurso */
+.feature p {
+    margin-bottom: 3;
+}
+
+/* Define estilos para o container principal */
+.container {
+    width: 80%; /* Largura do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 20px; /* Preenchimento interno */
+    display: grid; /* Exibe os elementos como uma grade */
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Define estilos para o botão de alternância do menu responsivo */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Define estilos para as linhas do ícone do menu responsivo */
+.menu-toggle input {
+    display: none;
+}
+
+/* Define estilos para as linhas do ícone do menu responsivo */
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Define estilos para as linhas do ícone do menu responsivo quando o input está marcado */
+.menu-toggle input:checked ~ span:nth-child(2) {
+    opacity: 0;
+}
+
+/* Define estilos para a primeira linha do ícone do menu responsivo quando o input está marcado */
+.menu-toggle input:checked ~ span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+/* Define estilos para a terceira linha do ícone do menu responsivo quando o input está marcado */
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -2px);
+}
+
+/* Define estilos para a barra de navegação responsiva */
+@media screen and (max-width: 600px) {
+    /* Define estilos para o botão de alternância do menu responsivo */
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Define estilos para a lista não ordenada na barra de navegação responsiva */
+    .menu-toggle ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Define estilos para os itens da lista na barra de navegação responsiva */
+    .menu-toggle ul li {
+        display: block;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Define estilos para os links na barra de navegação responsiva */
+    .menu-toggle ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Define estilos para a lista não ordenada na barra de navegação responsiva quando o input está marcado */
+    .menu-toggle input:checked ~ ul {
+        display: flex;
+    }
+
+    .container {
+        display: none;
+    }
+}
+
