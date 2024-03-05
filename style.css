@@ -116,8 +116,10 @@ nav ul li a {
 
 /* Define estilos para o container do fleshboard */
 .dashboard {
+    margin-top:60px;
     background-color: #ececec;
     padding: 40px;
+    padding-bottom: 80px;
 }
 
 /* Define estilos para o fleshboard "Período" */
@@ -129,7 +131,7 @@ nav ul li a {
 
 /* Define estilos para o título dentro do fleshboard "Período" */
 .period-fleshboard h3 {
-    margin-top: 0;
+    margin-top: 5;
     color: #030000;
 }
 
@@ -145,7 +147,7 @@ nav ul li a {
     width: 120px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px 5px 5px 5px;
     font-size: 16px;
 }
 
@@ -169,8 +171,8 @@ nav ul li a {
     padding: 10px;
     border: none;
     background-color: #68686b;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
+    color: #141313;
+    border-radius: 5px 5px 5px 5px;
     cursor: pointer;
 }
 
@@ -183,7 +185,7 @@ nav ul li a {
 
 /* Define estilos para cada recurso */
 .feature {
-    background-color: #2b374b;
+    background: linear-gradient(180deg, #2E365A 0%, #3F5B8B 100%);
     color: #fff;
     padding: 20px;
     text-align: left;
@@ -220,85 +222,3 @@ nav ul li a {
     grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
     gap: 20px; /* Espaçamento entre os elementos */
 }
-
-/* Define estilos para o botão de alternância do menu responsivo */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-/* Define estilos para as linhas do ícone do menu responsivo */
-.menu-toggle input {
-    display: none;
-}
-
-/* Define estilos para as linhas do ícone do menu responsivo */
-.menu-toggle span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin-bottom: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Define estilos para as linhas do ícone do menu responsivo quando o input está marcado */
-.menu-toggle input:checked ~ span:nth-child(2) {
-    opacity: 0;
-}
-
-/* Define estilos para a primeira linha do ícone do menu responsivo quando o input está marcado */
-.menu-toggle input:checked ~ span:nth-child(1) {
-    transform: rotate(45deg) translate(2px, 2px);
-}
-
-/* Define estilos para a terceira linha do ícone do menu responsivo quando o input está marcado */
-.menu-toggle input:checked ~ span:nth-child(3) {
-    transform: rotate(-45deg) translate(2px, -2px);
-}
-
-/* Define estilos para a barra de navegação responsiva */
-@media screen and (max-width: 600px) {
-    /* Define estilos para o botão de alternância do menu responsivo */
-    .menu-toggle {
-        display: flex;
-        align-items: center;
-    }
-    
-    /* Define estilos para a lista não ordenada na barra de navegação responsiva */
-    .menu-toggle ul {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    /* Define estilos para os itens da lista na barra de navegação responsiva */
-    .menu-toggle ul li {
-        display: block;
-        margin: 0;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Define estilos para os links na barra de navegação responsiva */
-    .menu-toggle ul li a {
-        display: block;
-        padding: 10px 0;
-    }
-
-    /* Define estilos para a lista não ordenada na barra de navegação responsiva quando o input está marcado */
-    .menu-toggle input:checked ~ ul {
-        display: flex;
-    }
-
-    .container {
-        display: none;
-    }
-}
-
