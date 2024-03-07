@@ -126,7 +126,7 @@ nav ul li a {
     margin-right: -0.5%;
 }
 
-/* Define estilos para o container dos fleshboards */
+/* Define estilos para o container principal*/
 .dashboard {
     justify-items: center;
     justify-content: center; 
@@ -136,6 +136,9 @@ nav ul li a {
     padding: 40px;
     padding-bottom: 0%;
     width: auto;
+    display: grid; /* Exibe os elementos como uma grade */
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
+    gap: 2%; /* Espaçamento entre os elementos */
 }
 
 .period-fleshboard {
@@ -251,15 +254,6 @@ nav ul li a {
 /* Define estilos para o parágrafo dentro de cada recurso */
 .feature p {
     margin-bottom: 3;
-}
-
-/* Define estilos para o container principal */
-.container {
-    margin: 0 auto; /* Centraliza o container na página */
-    display: grid; /* Exibe os elementos como uma grade */
-    grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
-    gap: 2%; /* Espaçamento entre os elementos */
-
 }
 
 /* Estilos para telas pequenas (até 600px de largura) */
