@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Define estilos para o cabeçalho */
@@ -116,21 +116,25 @@ nav ul li a {
 }
 
 .highlighted-block {
+    flex: 1;
     background: linear-gradient(180deg, #2E365A 0%, #3F5B8B 100%);
-    margin-bottom: 20px;
+    margin-bottom: 0%;
     margin-top: -45px;
     min-width: 320px;
     max-width: 1920px;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
 }
 
 /* Define estilos para o container dos fleshboards */
 .dashboard {
+    justify-items: center;
     justify-content: center; 
     display: flex;
-    margin-top:60px;
+    margin-top:4%;
     background-color: #ececec;
     padding: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 0%;
     width: auto;
 }
 
@@ -144,6 +148,7 @@ nav ul li a {
 
 /* Define estilos para o título dentro do fleshboard "Período" */
 .period-fleshboard h3 {
+    font-family: 'Roboto', sans-serif;
     margin-top: 5;
     color: #ece7e7;
 }
@@ -173,7 +178,6 @@ nav ul li a {
 }
 
 /* Define estilos para o botão dentro do grupo de entrada / Botão "Pesquisar"*/
-
 .search-button img {
     /*tamanho da imagem do ícone "Pesquisar"*/
     width: 20px;  
@@ -193,18 +197,41 @@ nav ul li a {
 .feature-grid {
     display: grid; /* Exibe os elementos como uma grade */
     grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
-    gap: 20px; /* Espaçamento entre os elementos */
+    grid-template-rows: auto; /* Altura automática para cada linha */
+    gap: -30%; /* Espaçamento entre os elementos */
 }
 
 /* Define estilos para cada recurso */
 .feature {
-    background: linear-gradient(180deg, #2E365A 0%, #3F5B8B 100%);
+    justify-items: center;
     color: #fff;
     padding: 5%;
     text-align: left;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
+}
+
+.column1,
+.column2,
+.column3 {
+    flex: 1; /* Distribui o espaço igualmente entre as colunas */
+}
+
+.column1 {
+    margin-left: -7%;
+    background-color: #7990b9;
+}
+
+.column2 {
+    background-color: #5772a0;
+}
+
+.column3 {
+    margin-right: -7%;
+    background-color: #2E365A;
 }
 
 /*Define estilos para a imagem dentro de cada recurso*/
@@ -231,7 +258,8 @@ nav ul li a {
     margin: 0 auto; /* Centraliza o container na página */
     display: grid; /* Exibe os elementos como uma grade */
     grid-template-columns: repeat(3, 1fr); /* Três colunas de largura igual */
-    gap: 3px; /* Espaçamento entre os elementos */
+    gap: 2%; /* Espaçamento entre os elementos */
+
 }
 
 /* Estilos para telas pequenas (até 600px de largura) */
